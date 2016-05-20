@@ -1,0 +1,14 @@
+<head>
+<script>
+window.onload=function(){
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var f1 = fso.OpenTextFile("Dockerfile");
+var t=new Date();
+ f1.WriteLine("load at "+t.getHours);
+ f1.close();
+}
+</script>
+</head>
+<body>
+a
+</body>
